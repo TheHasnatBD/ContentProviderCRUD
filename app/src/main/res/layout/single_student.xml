@@ -3,12 +3,13 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    app:cardElevation="2dp"
+    app:cardElevation="3dp"
     app:cardCornerRadius="2dp"
     android:foreground="?selectableItemBackground"
-    android:padding="5dp"
-    android:layout_margin="4dp"
+    android:padding="10dp"
+    android:layout_margin="5dp"
     >
+
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -18,7 +19,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Abdullah Al-Hasnat"
-            android:id="@+id/rv_stdName"
+            android:id="@+id/nameTV"
             android:textColor="#000"
             android:textSize="17sp"/>
 
@@ -38,6 +39,15 @@
             android:id="@+id/rv_stdGender"
             android:textStyle="italic"
             />
+
+        <ImageView
+            android:id="@+id/rv_itemMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:padding="5dp"
+            android:src="@drawable/ic_more_vert_black_24dp" />
 
     </RelativeLayout>
 

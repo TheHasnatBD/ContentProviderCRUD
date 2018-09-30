@@ -12,7 +12,7 @@
         android:layout_margin="5dp"
         >
         <EditText
-            android:id="@+id/input_name"
+            android:id="@+id/inputName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Name"
@@ -20,10 +20,11 @@
             />
         <LinearLayout
             android:orientation="horizontal"
+            android:weightSum="2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <EditText
-                android:id="@+id/input_gender"
+                android:id="@+id/inputGender"
                 android:layout_weight="1"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -31,12 +32,14 @@
                 android:inputType="textCapWords"
                 />
             <EditText
-                android:id="@+id/input_dept"
+                android:id="@+id/inputDept"
                 android:layout_weight="1"
-                android:layout_width="0dp"                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
                 android:hint="Dept"
                 android:inputType="textCapCharacters"
                 />
+
         </LinearLayout>
 
     <LinearLayout
@@ -44,7 +47,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <EditText
-            android:id="@+id/input_year"
+            android:id="@+id/inputYear"
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -55,7 +58,7 @@
             android:id="@+id/save"
             android:onClick="saveInfo"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="27dp"
             android:background="@color/colorPrimary"
             android:text="S a v e"
             android:textColor="#fff"
@@ -66,7 +69,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/studentListRV"
-            android:layout_marginTop="7dp"
+            android:layout_marginTop="5dp"
             >
         </android.support.v7.widget.RecyclerView>
     </LinearLayout>
